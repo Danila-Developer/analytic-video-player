@@ -1,0 +1,27 @@
+.analytic-video-player {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    width: calc(100% - 200px);
+}
+
+.analytic-video-player__video {
+    width: 100%;
+    display: block;
+}
+
+.video-control {
+    opacity: 0;
+    transition: .3s all;
+}
+
+.analytic-video-player:hover .video-control {
+    opacity: 1;
+}
+
+.analytic-video-player-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}

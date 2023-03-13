@@ -1,0 +1,41 @@
+.analytic-event-list {
+    width: 200px;
+    background-color: #505050;
+    overflow: scroll;
+    height: 100vh;
+    display: block;
+    color: #BEBEBE;
+    font-size: 0.9rem;
+}
+
+.analytic-event-list__event:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.analytic-event-list__event {
+    text-align: center;
+    padding: 0.3rem 0;
+    cursor: pointer;
+    border-bottom: 0.07rem solid #2D2D2D;
+    position: relative;
+}
+
+.analytic-event-list__event:hover:after {
+    opacity: 1;
+}
+
+.analytic-event-list__event::after {
+    content: attr(data-hover);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: .3s all;
+    opacity: 0;
+    padding: inherit;
+}
